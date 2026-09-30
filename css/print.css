@@ -1,0 +1,106 @@
+/* ============================================================
+   PRINT.CSS — application-print.html
+   แก้ขอบกระดาษที่ @page ด้านล่าง / แก้ลายน้ำที่ .doc-watermark
+   แก้ Section ที่ห้ามตัดหน้ากระดาษที่ break-inside: avoid (ด้านล่าง)
+   ============================================================ */
+
+@page {
+  size: A4;
+  margin: 15mm;
+}
+
+.print-toolbar {
+  max-width: 210mm;
+  margin: 24px auto 0;
+  padding: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.print-document {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 20px auto 60px;
+  background: var(--white);
+  padding: 14mm 16mm;
+  box-shadow: var(--shadow-md);
+  color: #111;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.doc-header { display: flex; align-items: center; gap: 16px; border-bottom: 2px solid #111; padding-bottom: 12px; margin-bottom: 14px; }
+.doc-header .doc-logos { display: flex; gap: 10px; }
+.doc-header .doc-logo { width: 46px; height: 46px; border-radius: 50%; border: 1px solid #111; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; }
+.doc-header .doc-titles { flex: 1; text-align: center; }
+.doc-header .doc-titles .univ { font-weight: 700; font-size: 15px; }
+.doc-header .doc-titles .faculty { font-size: 12px; }
+.doc-header .doc-titles .form-title { font-size: 16px; font-weight: 700; margin-top: 4px; }
+.doc-header .doc-meta { text-align: right; font-size: 11px; }
+.doc-header .doc-meta .app-no { font-weight: 700; font-size: 13px; }
+
+.doc-watermark {
+  position: fixed;
+  top: 45%;
+  left: 10%;
+  font-size: 70px;
+  color: rgba(0,0,0,0.06);
+  transform: rotate(-28deg);
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.application-section, .document-section, .signature-section {
+  break-inside: avoid;
+  margin-bottom: 14px;
+}
+.application-section h3 {
+  font-size: 13px;
+  background: #EFEFEF;
+  padding: 5px 10px;
+  border-left: 4px solid #111;
+  margin-bottom: 8px;
+}
+
+.doc-table { width: 100%; border-collapse: collapse; }
+.doc-table td, .doc-table th { border: 1px solid #999; padding: 6px 8px; font-size: 12px; vertical-align: top; }
+.doc-table th { background: #F5F5F5; text-align: left; width: 30%; }
+
+.doc-photo-box {
+  width: 30mm; height: 40mm;
+  border: 1px solid #111;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px; color: #777; text-align: center;
+  float: right;
+}
+
+.doc-checklist { list-style: none; padding: 0; }
+.doc-checklist li { padding: 3px 0; font-size: 12px; }
+.doc-checklist li::before { content: "☑ "; }
+
+.qr-placeholder {
+  width: 22mm; height: 22mm;
+  border: 1px solid #111;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 9px; text-align: center; color: #777;
+}
+
+.signature-section { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 30px; }
+.signature-box { text-align: center; padding-top: 30px; border-top: 1px dotted #111; font-size: 12px; }
+
+.doc-footer-note { text-align: center; font-size: 11px; color: #555; margin-top: 20px; border-top: 1px solid #999; padding-top: 8px; }
+
+/* ============================================================
+   MEDIA PRINT — hide site chrome, show only the document
+   ============================================================ */
+@media print {
+  body { background: var(--white, #fff); }
+  .site-header, .site-footer, .utility-bar, .screen-only, .print-toolbar { display: none !important; }
+  .print-document { box-shadow: none; margin: 0; width: 210mm; min-height: 297mm; padding: 0; }
+  .doc-watermark { display: block; }
+}
+
+@media screen {
+  .print-only { display: none; }
+}

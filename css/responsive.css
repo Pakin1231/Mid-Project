@@ -1,0 +1,37 @@
+/* ============================================================
+   RESPONSIVE — Desktop / Tablet / Mobile
+   ============================================================ */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .steps-row { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 2rem; }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .utility-bar-inner { justify-content: center; text-align: center; }
+  .utility-links:last-child { display: none; }
+
+  .header-inner { flex-wrap: wrap; }
+  .main-nav { order: 3; width: 100%; }
+  .main-nav ul { overflow-x: auto; flex-wrap: nowrap; padding-bottom: 4px; }
+  .main-nav a { white-space: nowrap; }
+
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .steps-row { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+
+  .hero-grid { padding: 36px 0; gap: 24px; }
+  .hero h1 { font-size: 1.7rem; }
+  .hero-actions .btn { width: 100%; }
+
+  .section { padding: 44px 0; }
+
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+}

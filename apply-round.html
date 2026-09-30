@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>เลือกโครงการรับสมัคร | FITM</title>
+<meta name="description" content="เลือกโครงการรับสมัคร — ระบบรับสมัครนักศึกษาใหม่ คณะเทคโนโลยีและการจัดการอุตสาหกรรม วิทยาเขตปราจีนบุรี">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/form.css">
+<link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+
+<!-- =========================
+     UTILITY BAR + HEADER  (แก้เมนู/ข้อมูลติดต่อด่วนที่ layout.py แล้วรัน build.py)
+========================= -->
+<div class="utility-bar">
+  <div class="utility-bar-inner">
+    <div class="utility-links">
+      <a href="https://www.kmutnb.ac.th" target="_blank" rel="noopener">มจพ. กรุงเทพฯ</a>
+      <a href="https://www.admission.kmutnb.ac.th" target="_blank" rel="noopener">ระบบรับสมัครกลาง มจพ.</a>
+      <a href="https://www.fitm.kmutnb.ac.th/" target="_blank" rel="noopener">เว็บไซต์คณะ FITM</a>
+    </div>
+    <div class="utility-links">
+      <span>โทร. 0-3721-7339</span>
+      <span>Line @fitm</span>
+      <a href="mailto:it@itm.kmutnb.ac.th">it@itm.kmutnb.ac.th</a>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-marks"><span class="brand-mark">มจพ.</span><span class="brand-mark brand-mark--accent">FITM</span></span>
+      <span class="brand-text">
+        <span class="brand-faculty">คณะเทคโนโลยีและการจัดการอุตสาหกรรม</span>
+        <span class="brand-system">ระบบรับสมัครนักศึกษาใหม่ · วิทยาเขตปราจีนบุรี</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="เมนูหลัก"><ul><li><a href="index.html">หน้าหลัก</a></li><li><a href="admission.html">รับสมัคร</a></li><li><a href="programs.html">หลักสูตร</a></li><li><a href="news.html">ข่าวสาร</a></li><li><a href="announcement.html">ประกาศ</a></li><li><a href="scholarship.html">ทุนการศึกษา</a></li><li><a href="openhouse.html">Open House</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">ติดต่อเรา</a></li></ul></nav>
+    <div class="header-actions">
+      <a href="login.html" class="btn btn-secondary btn-sm">เข้าสู่ระบบ</a>
+      <a href="apply.html" class="btn btn-primary btn-sm">สมัครเรียน</a>
+    </div>
+  </div>
+</header>
+
+<!-- =========================
+     MAIN CONTENT
+========================= -->
+<main>
+
+  <div class="container section">
+    <div class="apply-layout">
+      <aside class="step-sidebar screen-only"><p class="step-sidebar-label">ขั้นตอนสมัคร</p><ol><li class="step-completed"><span class="num">✓</span><span>ประเภทผู้สมัคร</span></li><li class="step-current"><span class="num">02</span><span>โครงการ</span></li><li class="step-pending"><span class="num">03</span><span>หลักสูตร</span></li><li class="step-pending"><span class="num">04</span><span>ข้อมูลส่วนตัว</span></li><li class="step-pending"><span class="num">05</span><span>การศึกษา</span></li><li class="step-pending"><span class="num">06</span><span>ผู้ปกครอง</span></li><li class="step-pending"><span class="num">07</span><span>ที่อยู่</span></li><li class="step-pending"><span class="num">08</span><span>เอกสาร</span></li><li class="step-pending"><span class="num">09</span><span>ตรวจสอบ</span></li><li class="step-pending"><span class="num">10</span><span>เสร็จสิ้น</span></li></ol></aside>
+      <div class="form-card">
+        <div class="stepper-top screen-only"><span>ขั้นตอนที่ 2/10 · โครงการ</span><div class="dots"><span class="dot done"></span><span class="dot cur"></span><span class="dot "></span><span class="dot "></span><span class="dot "></span><span class="dot "></span><span class="dot "></span><span class="dot "></span><span class="dot "></span><span class="dot "></span></div></div>
+        <h2>เลือกโครงการรับสมัคร</h2><p class="text-muted">เลือกโครงการที่ต้องการสมัคร — ดูรายละเอียดแต่ละโครงการได้ที่ <a href="admission-rounds.html">รอบรับสมัคร</a></p>
+    <div class="choice-grid"><label class="choice-card"><input type="radio" name="apply-round">
+      <span class="title">โควตา Portfolio</span><span class="desc">พิจารณาจากแฟ้มสะสมผลงาน (Portfolio) ผลการเรียน และการสอบสัมภาษณ์ออนไลน์</span>
+      <span class="desc"><span class="badge status-pending">ตรวจสอบประกาศ</span></span></label><label class="choice-card"><input type="radio" name="apply-round">
+      <span class="title">โควตาเรียนดี</span><span class="desc">สำหรับนักเรียน ปวช.3 และนักศึกษา ปวส.2 ที่มีผลการเรียนดี</span>
+      <span class="desc"><span class="badge status-warning">ใกล้ปิดรับสมัคร</span></span></label><label class="choice-card"><input type="radio" name="apply-round">
+      <span class="title">โควตากระจายโอกาส</span><span class="desc">เพื่อกระจายโอกาสทางการศึกษา รับจากนักเรียนและนักศึกษาทั่วประเทศ คัดเลือกโดยเรียงความและสอบสัมภาษณ์ออนไลน์</span>
+      <span class="desc"><span class="badge status-pending">ตรวจสอบประกาศ</span></span></label><label class="choice-card"><input type="radio" name="apply-round">
+      <span class="title">โควตาเทคโนโลยีเพื่อชุมชน</span><span class="desc">สำหรับผู้สนใจนำความรู้ด้านเทคโนโลยีไปพัฒนาชุมชน</span>
+      <span class="desc"><span class="badge status-pending">ตรวจสอบประกาศ</span></span></label><label class="choice-card"><input type="radio" name="apply-round">
+      <span class="title">โควตาบุตรข้าราชการ</span><span class="desc">สำหรับบุตรของข้าราชการ/เจ้าหน้าที่ตามเงื่อนไขที่ประกาศ</span>
+      <span class="desc"><span class="badge status-pending">ตรวจสอบประกาศ</span></span></label><label class="choice-card"><input type="radio" name="apply-round">
+      <span class="title">โควตาพื้นที่</span><span class="desc">สำหรับผู้มีภูมิลำเนาหรือศึกษาในสถานศึกษาในพื้นที่ 10 จังหวัดที่กำหนด</span>
+      <span class="desc"><span class="badge status-warning">ใกล้ปิดรับสมัคร</span></span></label><label class="choice-card"><input type="radio" name="apply-round">
+      <span class="title">โครงการพิเศษ</span><span class="desc">โครงการอื่นที่คณะประกาศเพิ่มเติม เช่น รอบ TCAS ผ่านระบบกลาง</span>
+      <span class="desc"><span class="badge status-pending">ตรวจสอบประกาศ</span></span></label></div>
+        <div class="form-actions">
+          <a href="apply-type.html" class="btn btn-secondary">ย้อนกลับ</a>
+          <a href="apply-program.html" class="btn btn-primary">ถัดไป</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- =========================
+     FOOTER
+========================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>คณะเทคโนโลยีและการจัดการอุตสาหกรรม (FITM)</h4>
+        <p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี</p>
+        <p>129 หมู่ 21 ตำบลเนินหอม อำเภอเมืองปราจีนบุรี จังหวัดปราจีนบุรี 25230</p>
+      </div>
+      <div class="footer-col">
+        <h4>ติดต่อ</h4>
+        <p>โทรศัพท์ 0-3721-7300 ต่อ 7017, 7032, 7034</p>
+        <p>งานประชาสัมพันธ์ 0-3721-7339</p>
+        <a href="mailto:it@itm.kmutnb.ac.th">it@itm.kmutnb.ac.th (ภาควิชา IT)</a>
+        <p>Facebook: FITM · Line: @fitm</p>
+        <p>เวลาทำการ: วันและเวลาราชการ</p>
+      </div>
+      <div class="footer-col">
+        <h4>เมนูลัด</h4>
+        <a href="apply.html">สมัครเรียน</a>
+        <a href="programs.html">หลักสูตร</a>
+        <a href="admission-rounds.html">รอบรับสมัคร</a>
+        <a href="application-status.html">ตรวจสอบสถานะ</a>
+        <a href="faq.html">คำถามที่พบบ่อย</a>
+      </div>
+      <div class="footer-col">
+        <h4>ข้อมูลเพิ่มเติม</h4>
+        <a href="scholarship.html">ทุนการศึกษา</a>
+        <a href="dormitory.html">หอพัก</a>
+        <a href="openhouse.html">Open House</a>
+        <a href="privacy.html">นโยบายข้อมูลส่วนบุคคล</a>
+        <a href="sitemap.html">แผนผังเว็บไซต์</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2569 คณะเทคโนโลยีและการจัดการอุตสาหกรรม มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</span>
+      <span>ต้นแบบระบบรับสมัคร (Front-end Demo) — การสมัครจริงที่ <a href="https://www.admission.kmutnb.ac.th" target="_blank" rel="noopener">admission.kmutnb.ac.th</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

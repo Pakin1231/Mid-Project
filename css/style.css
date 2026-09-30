@@ -1,0 +1,434 @@
+/* ============================================================
+   FITM ADMISSION SYSTEM — GLOBAL STYLESHEET
+   มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+   คณะเทคโนโลยีและการจัดการอุตสาหกรรม (FITM) วิทยาเขตปราจีนบุรี
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Sarabun+Condensed:wght@600;700&display=swap');
+
+/* ============================================================
+   DESIGN TOKENS — แก้สี/ระยะห่าง/ขนาดของทั้งเว็บไซต์ที่นี่
+   ============================================================ */
+:root {
+  /* Brand palette — steel blue (เทคโนโลยี/ความน่าเชื่อถือ) + amber (อุตสาหกรรม/พลังงาน) */
+  --primary-color: #1B3A5C;
+  --primary-dark: #102538;
+  --primary-light: #2E5680;
+  --secondary-color: #0E2438;
+  --accent-color: #C97A26;
+  --accent-dark: #A5621B;
+  --dark-color: #12202D;
+  --text-color: #232E38;
+  --muted-color: #5B6B79;
+  --light-bg: #F4F6F8;
+  --panel-bg: #FFFFFF;
+  --border-color: #D7DEE5;
+  --white: #FFFFFF;
+
+  /* status colors */
+  --status-open-bg: #E7F4EC;
+  --status-open-text: #1E7A46;
+  --status-warning-bg: #FDF1DE;
+  --status-warning-text: #A5621B;
+  --status-closed-bg: #F3E9E9;
+  --status-closed-text: #8A3A3A;
+  --status-pending-bg: #E9EEF5;
+  --status-pending-text: #3A5A82;
+
+  --container-width: 1200px;
+
+  /* มุมโค้งแบบเรียบ ไม่กลมมนเกินไป — ให้ความรู้สึกเอกสารราชการ/สถาบันการศึกษา */
+  --radius-sm: 3px;
+  --radius-md: 5px;
+  --radius-lg: 8px;
+
+  --shadow-sm: 0 1px 2px rgba(18, 32, 45, 0.06);
+  --shadow-md: 0 2px 8px rgba(18, 32, 45, 0.08);
+
+  --font-heading: 'Sarabun', 'Noto Sans Thai', sans-serif;
+  --font-body: 'Sarabun', 'Noto Sans Thai', sans-serif;
+  --font-condensed: 'Sarabun Condensed', 'Sarabun', sans-serif;
+}
+
+/* ============================================================
+   RESET
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body, h1, h2, h3, h4, p, ul, ol, figure { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+
+/* ============================================================
+   GLOBAL / TYPOGRAPHY
+   ============================================================ */
+body {
+  font-family: var(--font-body);
+  color: var(--text-color);
+  background: var(--light-bg);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--dark-color); font-weight: 700; line-height: 1.25; }
+h1 { font-size: 2.4rem; letter-spacing: -0.01em; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.3rem; }
+h4 { font-size: 1.05rem; }
+
+p { color: var(--text-color); }
+.text-muted { color: var(--muted-color); }
+
+.eyebrow {
+  font-family: var(--font-condensed);
+  font-size: 0.8rem;
+  color: var(--accent-dark);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 64px 0;
+}
+.section--tight { padding: 40px 0; }
+.section--alt { background: var(--white); }
+
+.section-head {
+  max-width: 640px;
+  margin-bottom: 36px;
+}
+.section-head h2 { margin-bottom: 10px; }
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 26px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.98rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.btn-primary { background: var(--accent-color); color: var(--white); }
+.btn-primary:hover { background: var(--accent-dark); }
+.btn-secondary { background: var(--white); color: var(--primary-color); border-color: var(--primary-color); }
+.btn-secondary:hover { background: var(--primary-color); color: var(--white); }
+.btn-outline { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.6); }
+.btn-outline:hover { background: rgba(255,255,255,0.14); }
+.btn-block { width: 100%; }
+.btn-sm { padding: 8px 16px; font-size: 0.88rem; }
+
+/* ============================================================
+   UTILITY BAR (แถบข้อมูลด่วนเหนือ Header — โทร/อีเมล/เปลี่ยนภาษา)
+   ============================================================ */
+.utility-bar {
+  background: var(--secondary-color);
+  color: rgba(255,255,255,0.82);
+  font-size: 0.78rem;
+}
+.utility-bar-inner {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 6px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.utility-bar a { color: rgba(255,255,255,0.82); }
+.utility-bar a:hover { color: var(--white); }
+.utility-links { display: flex; gap: 18px; flex-wrap: wrap; }
+.utility-links span { opacity: 0.5; margin-right: 18px; }
+
+/* ============================================================
+   HEADER / NAVIGATION
+   ============================================================ */
+.site-header {
+  background: var(--white);
+  border-bottom: 3px solid var(--primary-color);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 12px 24px;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.brand-marks { display: flex; align-items: center; gap: 6px; }
+.brand-mark {
+  width: 42px; height: 42px;
+  border-radius: var(--radius-sm);
+  background: var(--primary-color);
+  color: var(--white);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-condensed);
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+}
+.brand-mark--accent { background: var(--accent-color); }
+.brand-text { line-height: 1.3; }
+.brand-text .brand-faculty { display: block; font-weight: 700; font-size: 1rem; color: var(--dark-color); }
+.brand-text .brand-system { display: block; font-size: 0.76rem; color: var(--muted-color); }
+
+.main-nav ul { display: flex; gap: 2px; flex-wrap: wrap; }
+.main-nav a {
+  display: inline-block;
+  padding: 9px 13px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+.main-nav a:hover, .main-nav a[aria-current="page"] { background: var(--light-bg); color: var(--primary-color); }
+.main-nav a[aria-current="page"] { font-weight: 700; box-shadow: inset 0 -3px 0 var(--accent-color); border-radius: 0; }
+
+.header-actions { display: flex; align-items: center; gap: 10px; }
+
+/* ============================================================
+   HERO — เลย์เอาต์ 2 คอลัมน์ไม่สมมาตร (เนื้อหา 60% + กล่องข้อมูลรับสมัคร 40%)
+   ไม่ใช้พื้นหลังไล่สี (gradient) เพื่อให้ดูเป็นเว็บสถาบันมากกว่าเว็บโปรโมท
+   ============================================================ */
+.hero {
+  background: var(--primary-color);
+  color: var(--white);
+  border-bottom: 6px solid var(--accent-color);
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 40px;
+  align-items: stretch;
+  padding: 52px 0;
+}
+.hero-inner { max-width: 620px; padding-top: 4px; }
+.hero .eyebrow { color: #E9C79A; }
+.hero h1 { color: var(--white); margin-bottom: 14px; font-size: 2.3rem; }
+.hero p.lead { color: rgba(255,255,255,0.82); font-size: 1.04rem; max-width: 540px; margin-bottom: 28px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+/* กล่องข้อมูลรับสมัครฝังในฝั่งขวาของ Hero แทนการ์กลอยทับ (ไม่ใช้ negative-margin overlap) */
+.hero-info-box {
+  background: var(--white);
+  color: var(--text-color);
+  border-radius: var(--radius-md);
+  padding: 26px 26px 22px;
+  align-self: center;
+}
+.hero-info-box .badge { margin-bottom: 12px; }
+.hero-info-box h3 { font-size: 1.05rem; margin-bottom: 16px; line-height: 1.4; }
+.hero-info-box dl { display: grid; grid-template-columns: auto 1fr; gap: 7px 14px; margin-bottom: 18px; font-size: 0.86rem; }
+.hero-info-box dt { color: var(--muted-color); }
+.hero-info-box dd { font-weight: 600; text-align: right; }
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+.card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 24px;
+}
+
+.grid {
+  display: grid;
+  gap: 22px;
+}
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+/* Status badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.status-open { background: var(--status-open-bg); color: var(--status-open-text); }
+.status-warning { background: var(--status-warning-bg); color: var(--status-warning-text); }
+.status-closed { background: var(--status-closed-bg); color: var(--status-closed-text); }
+.status-pending { background: var(--status-pending-bg); color: var(--status-pending-text); }
+
+/* Quick access */
+.quick-link {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px 20px;
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-left: 3px solid transparent;
+  transition: border-color 0.12s ease, background 0.12s ease;
+}
+.quick-link:hover { border-left-color: var(--accent-color); background: #FBFAF8; }
+.quick-link .icon {
+  width: 34px; height: 34px;
+  flex-shrink: 0;
+  border: 1px solid var(--border-color);
+  color: var(--primary-color);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-condensed);
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+.quick-link .link-text { display: flex; flex-direction: column; gap: 3px; }
+.quick-link .title { font-weight: 600; color: var(--dark-color); }
+.quick-link .desc { font-size: 0.84rem; color: var(--muted-color); }
+
+/* Program card */
+.program-card {
+  display: block;
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+.program-card .thumb {
+  height: 150px;
+  background: var(--light-bg);
+  overflow: hidden;
+  border-bottom: 3px solid var(--primary-color);
+}
+.program-card .thumb img { width: 100%; height: 100%; object-fit: cover; }
+.program-card .body { padding: 16px 18px; }
+.program-card .dept { font-family: var(--font-condensed); font-size: 0.76rem; color: var(--accent-dark); font-weight: 700; letter-spacing: 0.04em; margin-bottom: 6px; }
+.program-card h3 { font-size: 1.02rem; margin-bottom: 8px; }
+.program-card .meta { display: flex; gap: 10px; flex-wrap: wrap; font-size: 0.8rem; color: var(--muted-color); }
+
+/* News / announcement rows */
+.list-row {
+  display: flex;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border-color);
+  align-items: flex-start;
+}
+.list-row:last-child { border-bottom: none; }
+.list-row .date {
+  min-width: 76px;
+  font-size: 0.82rem;
+  color: var(--muted-color);
+}
+.list-row h4 { margin-bottom: 4px; }
+
+/* How to apply steps */
+.steps-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border-color);
+  border: 1px solid var(--border-color);
+}
+.step-item { padding: 20px; background: var(--white); }
+.step-item .step-num { font-family: var(--font-condensed); font-size: 1.7rem; color: var(--accent-color); font-weight: 700; margin-bottom: 6px; display: block; }
+.step-item h4 { font-size: 0.95rem; }
+
+/* FAQ */
+.faq-item {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  margin-bottom: 8px;
+  padding: 4px 18px;
+}
+.faq-item summary { padding: 14px 0; font-weight: 600; cursor: pointer; color: var(--dark-color); }
+.faq-item div { padding-bottom: 16px; color: var(--muted-color); }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer { background: var(--dark-color); color: rgba(255,255,255,0.78); padding: 56px 0 24px; margin-top: 48px; }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; padding-bottom: 32px; }
+.footer-col h4 { color: var(--white); font-size: 0.98rem; margin-bottom: 14px; }
+.footer-col p, .footer-col a { display: block; font-size: 0.88rem; color: rgba(255,255,255,0.66); margin-bottom: 8px; }
+.footer-col a:hover { color: var(--white); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding-top: 20px;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.5);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* screen-only helper for print hiding */
+.screen-only { display: block; }
+
+/* ============================================================
+   NOTICE BAR (แถบประกาศด่วนใต้ Header หน้าแรก)
+   ============================================================ */
+.notice-bar { background: var(--status-warning-bg); color: var(--status-warning-text); border-bottom: 1px solid #F0D8B4; font-size: 0.86rem; padding: 9px 0; }
+.notice-bar a { color: var(--status-warning-text); font-weight: 700; text-decoration: underline; }
+
+/* ============================================================
+   LAYOUT UTILITIES ใช้ร่วมกันหลายหน้า
+   ============================================================ */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.two-col--wide { grid-template-columns: 2fr 1fr; align-items: start; }
+.grid-5 { grid-template-columns: repeat(5, 1fr); }
+.h-sec { margin: 30px 0 14px; font-size: 1.3rem; }
+.h-sec:first-child { margin-top: 0; }
+.lead-block { background: var(--white); border: 1px solid var(--border-color); border-left: 4px solid var(--primary-color); padding: 16px 20px; margin-bottom: 28px; color: var(--muted-color); }
+.bullet-list { padding-left: 0; margin-bottom: 14px; }
+.bullet-list li { position: relative; padding-left: 20px; margin-bottom: 8px; font-size: 0.94rem; }
+.bullet-list li::before { content: "—"; position: absolute; left: 0; color: var(--accent-color); font-weight: 700; }
+.link-list { display: flex; flex-direction: column; gap: 9px; margin-bottom: 10px; }
+.link-list li { list-style: none; font-size: 0.92rem; }
+.link-list a { color: var(--primary-color); font-weight: 600; }
+.link-list a:hover { text-decoration: underline; }
+.ext-link { color: var(--primary-color); text-decoration: underline; }
+.ext-link::after { content: " ↗"; font-size: 0.8em; }
+.row-cat { font-family: var(--font-condensed); font-size: 0.76rem; color: var(--accent-dark); font-weight: 700; letter-spacing: .03em; margin-bottom: 3px; }
+.row-actions { display: flex; gap: 8px; margin-top: 8px; }
+.row-between { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; font-size: 0.88rem; }
+.center-text { text-align: center; margin-top: 16px; }
+.link-strong { color: var(--primary-color); font-weight: 700; }
+.pager { display: flex; justify-content: space-between; margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--border-color); font-size: 0.88rem; }
+.pager a { color: var(--primary-color); font-weight: 600; }
+.chip { display: inline-block; padding: 2px 9px; border: 1px solid var(--border-color); font-size: 0.76rem; margin-right: 4px; border-radius: 3px; }
+.chip-row { font-size: 0.76rem !important; color: var(--muted-color) !important; }
+.article-img { width: 100%; height: auto; border: 1px solid var(--border-color); margin-bottom: 20px; }
+.sitemap-list { columns: 3; column-gap: 32px; }
+.sitemap-list li { list-style: none; margin-bottom: 8px; break-inside: avoid; font-size: 0.9rem; }
+.sitemap-list a { color: var(--primary-color); }
+.note-info { background: var(--status-pending-bg); color: var(--status-pending-text); border-color: #C9D8EA; }
+@media (max-width: 900px) { .two-col, .two-col--wide { grid-template-columns: 1fr; } .grid-5 { grid-template-columns: repeat(2,1fr); } .sitemap-list { columns: 1; } }

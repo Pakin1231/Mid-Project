@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>หลักสูตรทั้งหมด | FITM</title>
+<meta name="description" content="หลักสูตรทั้งหมด — ระบบรับสมัครนักศึกษาใหม่ คณะเทคโนโลยีและการจัดการอุตสาหกรรม วิทยาเขตปราจีนบุรี">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/admission.css">
+<link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+
+<!-- =========================
+     UTILITY BAR + HEADER  (แก้เมนู/ข้อมูลติดต่อด่วนที่ layout.py แล้วรัน build.py)
+========================= -->
+<div class="utility-bar">
+  <div class="utility-bar-inner">
+    <div class="utility-links">
+      <a href="https://www.kmutnb.ac.th" target="_blank" rel="noopener">มจพ. กรุงเทพฯ</a>
+      <a href="https://www.admission.kmutnb.ac.th" target="_blank" rel="noopener">ระบบรับสมัครกลาง มจพ.</a>
+      <a href="https://www.fitm.kmutnb.ac.th/" target="_blank" rel="noopener">เว็บไซต์คณะ FITM</a>
+    </div>
+    <div class="utility-links">
+      <span>โทร. 0-3721-7339</span>
+      <span>Line @fitm</span>
+      <a href="mailto:it@itm.kmutnb.ac.th">it@itm.kmutnb.ac.th</a>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-marks"><span class="brand-mark">มจพ.</span><span class="brand-mark brand-mark--accent">FITM</span></span>
+      <span class="brand-text">
+        <span class="brand-faculty">คณะเทคโนโลยีและการจัดการอุตสาหกรรม</span>
+        <span class="brand-system">ระบบรับสมัครนักศึกษาใหม่ · วิทยาเขตปราจีนบุรี</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="เมนูหลัก"><ul><li><a href="index.html">หน้าหลัก</a></li><li><a href="admission.html">รับสมัคร</a></li><li><a href="programs.html" aria-current="page">หลักสูตร</a></li><li><a href="news.html">ข่าวสาร</a></li><li><a href="announcement.html">ประกาศ</a></li><li><a href="scholarship.html">ทุนการศึกษา</a></li><li><a href="openhouse.html">Open House</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">ติดต่อเรา</a></li></ul></nav>
+    <div class="header-actions">
+      <a href="login.html" class="btn btn-secondary btn-sm">เข้าสู่ระบบ</a>
+      <a href="apply.html" class="btn btn-primary btn-sm">สมัครเรียน</a>
+    </div>
+  </div>
+</header>
+
+<!-- =========================
+     MAIN CONTENT
+========================= -->
+<main>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      
+      <p class="eyebrow">หลักสูตร</p>
+      <h1>หลักสูตรทั้งหมดของภาควิชา IT</h1>
+      <p>ภาควิชาเทคโนโลยีสารสนเทศ · ปริญญาตรี 3 ปริญญา 5 รหัสสาขา</p>
+    </div>
+  </section>
+  <div class="container section">
+    <p class="breadcrumb"><a href="index.html">หน้าหลัก</a> <span>›</span> <span>หลักสูตร</span></p>
+    <div class="lvl-nav"><a href="programs.html" aria-current="page">ทุกหลักสูตร</a><a href="undergraduate.html">ปริญญาตรี</a><a href="graduate.html">ปริญญาโท</a><a href="admission-diploma.html">อนุปริญญา</a></div>
+    <!-- ตัวกรองด้วย CSS ล้วน (radio + :checked) แก้ข้อมูล data-q / data-d ที่การ์ดแต่ละใบ -->
+    <div class="cf">
+      <input type="radio" name="fq" id="fq-all" class="fr fq-all" checked><input type="radio" name="fq" id="fq-m6" class="fr fq-m6"><input type="radio" name="fq" id="fq-pvc" class="fr fq-pvc"><input type="radio" name="fq" id="fq-pvs" class="fr fq-pvs"><input type="radio" name="fd" id="fd-all" class="fr fd-all" checked><input type="radio" name="fd" id="fd-4y" class="fr fd-4y"><input type="radio" name="fd" id="fd-3y" class="fr fd-3y"><input type="radio" name="fd" id="fd-2y" class="fr fd-2y">
+      <aside class="filter-panel">
+        <div class="filter-group"><span class="filter-label">วุฒิที่รับ</span><div class="filter-chips"><label for="fq-all" class="chip-l lq-all">ทั้งหมด</label><label for="fq-m6" class="chip-l lq-m6">ม.6</label><label for="fq-pvc" class="chip-l lq-pvc">ปวช.</label><label for="fq-pvs" class="chip-l lq-pvs">ปวส.</label></div></div>
+        <div class="filter-group"><span class="filter-label">รูปแบบ / ระยะเวลา</span><div class="filter-chips"><label for="fd-all" class="chip-l ld-all">ทั้งหมด</label><label for="fd-4y" class="chip-l ld-4y">4 ปี</label><label for="fd-3y" class="chip-l ld-3y">3 ปี</label><label for="fd-2y" class="chip-l ld-2y">2 ปี</label></div></div>
+        <p class="form-help">กดตัวเลือกเพื่อกรองการ์ดทางขวา (ทำงานด้วย CSS ล้วน ไม่ใช้ JavaScript)</p>
+        <hr>
+        <span class="filter-label">ทางลัด</span>
+        <ul class="link-list"><li><a href="#course-family">ตารางเปรียบเทียบ</a></li><li><a href="https://stdadmis2.kmutnb.ac.th/Information/GradCondCheck" target="_blank" rel="noopener" class="ext-link">ตรวจสอบคุณวุฒิ (มจพ.)</a></li></ul>
+      </aside>
+      <div class="cf-list">
+      <article class="pcard admission-card" data-q="m6 pvc" data-d="4y">
+        <div class="admission-card-head"><div><p class="dept-code">IT · รหัสสาขา 06101</p><h3>วิทยาศาสตรบัณฑิต (วท.บ.) สาขาวิชาเทคโนโลยีสารสนเทศ</h3><p class="sub">หลักสูตรปกติ 4 ปี</p></div></div>
+        <dl>
+          <dt>รูปแบบ</dt><dd>4 ปี</dd>
+          <dt>หน่วยกิต</dt><dd>120 หน่วยกิต</dd>
+          <dt>วุฒิที่รับ</dt><dd><span class="chip">ม.6</span> <span class="chip">ปวช.</span> <span class="text-muted">ม.6 หรือ ปวช. (สาขาที่เกี่ยวข้องตามเงื่อนไขของหลักสูตร)</span></dd>
+          <dt>ค่าใช้จ่าย</dt><dd>ประมาณ 19,000 บาท/ภาคการศึกษา</dd>
+        </dl>
+        <p class="sub" style="margin-bottom:14px;">หลักสูตรเก่าแก่ของภาควิชา (เปิดสอนมากว่า 20 ปี) ที่ปรับปรุงอย่างต่อเนื่อง เน้นออกแบบและพัฒนาซอฟต์แวร์ สร้างเว็บไซต์ขั้นสูง จัดการฐานข้อมูล และพัฒนาแอปบนมือถือ</p>
+        <div class="admission-card-actions"><a href="program-detail.html" class="btn btn-secondary btn-sm">รายละเอียดหลักสูตร</a><a href="apply.html" class="btn btn-primary btn-sm">สมัครหลักสูตรนี้</a></div>
+      </article>
+      <article class="pcard admission-card" data-q="pvs" data-d="2y">
+        <div class="admission-card-head"><div><p class="dept-code">ITT · รหัสสาขา 06307</p><h3>วิทยาศาสตรบัณฑิต (วท.บ.) สาขาวิชาเทคโนโลยีสารสนเทศ (เทียบโอน)</h3><p class="sub">หลักสูตรเทียบโอน/ต่อเนื่อง 2 ปี (สำหรับ ปวส.)</p></div></div>
+        <dl>
+          <dt>รูปแบบ</dt><dd>2 ปี</dd>
+          <dt>หน่วยกิต</dt><dd>84 หน่วยกิต</dd>
+          <dt>วุฒิที่รับ</dt><dd><span class="chip">ปวส.</span> <span class="text-muted">ปวส. (สาขาที่เกี่ยวข้อง) ตามเงื่อนไขของหลักสูตร</span></dd>
+          <dt>ค่าใช้จ่าย</dt><dd>ประมาณ 19,000 บาท/ภาคการศึกษา</dd>
+        </dl>
+        <p class="sub" style="margin-bottom:14px;">สำหรับผู้จบ ปวส. ที่ต้องการต่อปริญญา วท.บ. ด้านเทคโนโลยีสารสนเทศ เน้นระบบอัจฉริยะเชิงธุรกิจ โปรแกรมประยุกต์การวางแผนทรัพยากรองค์กร และการวิเคราะห์ธุรกิจ</p>
+        <div class="admission-card-actions"><a href="program-detail-itt.html" class="btn btn-secondary btn-sm">รายละเอียดหลักสูตร</a><a href="apply.html" class="btn btn-primary btn-sm">สมัครหลักสูตรนี้</a></div>
+      </article>
+      <article class="pcard admission-card" data-q="m6 pvc" data-d="4y">
+        <div class="admission-card-head"><div><p class="dept-code">INE · รหัสสาขา 06105</p><h3>วิศวกรรมศาสตรบัณฑิต (วศ.บ.) สาขาวิชาวิศวกรรมสารสนเทศและเครือข่าย</h3><p class="sub">หลักสูตรส่งเสริมภาษาอังกฤษ 4 ปี</p></div></div>
+        <dl>
+          <dt>รูปแบบ</dt><dd>4 ปี</dd>
+          <dt>หน่วยกิต</dt><dd>125 หน่วยกิต</dd>
+          <dt>วุฒิที่รับ</dt><dd><span class="chip">ม.6</span> <span class="chip">ปวช.</span> <span class="text-muted">ม.6 หรือ ปวช. (สาขาที่เกี่ยวข้องตามเงื่อนไขของหลักสูตร)</span></dd>
+          <dt>ค่าใช้จ่าย</dt><dd>ประมาณ 25,000 บาท/ภาคการศึกษา</dd>
+        </dl>
+        <p class="sub" style="margin-bottom:14px;">หลักสูตรวิศวกรรมที่เรียนรู้การจัดการข้อมูลหลากหลายและปริมาณมาก การหาประโยชน์สูงสุดจากข้อมูล และเครือข่ายคอมพิวเตอร์ มีบางรายวิชาสอนเป็นภาษาอังกฤษ</p>
+        <div class="admission-card-actions"><a href="program-detail-ine.html" class="btn btn-secondary btn-sm">รายละเอียดหลักสูตร</a><a href="apply.html" class="btn btn-primary btn-sm">สมัครหลักสูตรนี้</a></div>
+      </article>
+      <article class="pcard admission-card" data-q="pvs" data-d="3y">
+        <div class="admission-card-head"><div><p class="dept-code">INET · รหัสสาขา 06305</p><h3>วิศวกรรมศาสตรบัณฑิต (วศ.บ.) สาขาวิชาวิศวกรรมสารสนเทศและเครือข่าย (เทียบโอน)</h3><p class="sub">หลักสูตรเทียบโอน 3 ปี (สำหรับ ปวส.) ส่งเสริมภาษาอังกฤษ</p></div></div>
+        <dl>
+          <dt>รูปแบบ</dt><dd>3 ปี</dd>
+          <dt>หน่วยกิต</dt><dd>102 หน่วยกิต</dd>
+          <dt>วุฒิที่รับ</dt><dd><span class="chip">ปวส.</span> <span class="text-muted">ปวส. (สาขาที่เกี่ยวข้อง) ตามเงื่อนไขของหลักสูตร</span></dd>
+          <dt>ค่าใช้จ่าย</dt><dd>ประมาณ 25,000 บาท/ภาคการศึกษา</dd>
+        </dl>
+        <p class="sub" style="margin-bottom:14px;">แผนเทียบโอน 3 ปีสำหรับผู้จบ ปวส. เพื่อรับปริญญา วศ.บ. วิศวกรรมสารสนเทศและเครือข่าย เนื้อหาเดียวกับ INE และมีบางรายวิชาสอนเป็นภาษาอังกฤษ</p>
+        <div class="admission-card-actions"><a href="program-detail-inet.html" class="btn btn-secondary btn-sm">รายละเอียดหลักสูตร</a><a href="apply.html" class="btn btn-primary btn-sm">สมัครหลักสูตรนี้</a></div>
+      </article>
+      <article class="pcard admission-card" data-q="pvs" data-d="2y">
+        <div class="admission-card-head"><div><p class="dept-code">ITI · รหัสสาขา 06301</p><h3>อุตสาหกรรมศาสตรบัณฑิต (อส.บ.) สาขาวิชาเทคโนโลยีสารสนเทศ (ต่อเนื่อง)</h3><p class="sub">หลักสูตรต่อเนื่อง 2 ปี (สำหรับ ปวส.)</p></div></div>
+        <dl>
+          <dt>รูปแบบ</dt><dd>2 ปี</dd>
+          <dt>หน่วยกิต</dt><dd>78 หน่วยกิต</dd>
+          <dt>วุฒิที่รับ</dt><dd><span class="chip">ปวส.</span> <span class="text-muted">ปวส. (สาขาที่เกี่ยวข้อง) ตามเงื่อนไขของหลักสูตร</span></dd>
+          <dt>ค่าใช้จ่าย</dt><dd>ประมาณ 19,000 บาท/ภาคการศึกษา</dd>
+        </dl>
+        <p class="sub" style="margin-bottom:14px;">หลักสูตรเก่าแก่ที่ตอบโจทย์สายอาชีวะที่จบ ปวส. เน้นสร้างนวัตกรรมที่ผสมผสานไอที อิเล็กทรอนิกส์ และเทคโนโลยีฝังตัว มีผลงานนวัตกรรมด้าน IoT จำนวนมาก</p>
+        <div class="admission-card-actions"><a href="program-detail-iti.html" class="btn btn-secondary btn-sm">รายละเอียดหลักสูตร</a><a href="apply.html" class="btn btn-primary btn-sm">สมัครหลักสูตรนี้</a></div>
+      </article><p class="cf-empty">ไม่มีหลักสูตรที่ตรงกับตัวกรองที่เลือก — ลองเปลี่ยนวุฒิหรือรูปแบบ</p></div>
+    </div>
+
+    <h2 class="h-sec" id="course-family">ตารางเปรียบเทียบ 5 สาขา</h2>
+    <div class="table-wrap"><table class="data-table">
+      <thead><tr><th>รหัส</th><th>ปริญญา</th><th>ระยะเวลา</th><th>หน่วยกิต</th><th>ค่าเทอมโดยประมาณ</th><th>วุฒิที่รับ</th></tr></thead>
+      <tbody><tr><td><a href="program-detail.html"><strong>IT</strong></a></td><td>วท.บ. เทคโนโลยีสารสนเทศ</td><td>4 ปี</td><td>120</td><td>19,000 บาท</td><td><span class="chip">ม.6</span> <span class="chip">ปวช.</span></td></tr><tr><td><a href="program-detail-itt.html"><strong>ITT</strong></a></td><td>วท.บ. เทคโนโลยีสารสนเทศ (เทียบโอน)</td><td>2 ปี</td><td>84</td><td>19,000 บาท</td><td><span class="chip">ปวส.</span></td></tr><tr><td><a href="program-detail-ine.html"><strong>INE</strong></a></td><td>วศ.บ. วิศวกรรมสารสนเทศและเครือข่าย</td><td>4 ปี</td><td>125</td><td>25,000 บาท</td><td><span class="chip">ม.6</span> <span class="chip">ปวช.</span></td></tr><tr><td><a href="program-detail-inet.html"><strong>INET</strong></a></td><td>วศ.บ. วิศวกรรมสารสนเทศและเครือข่าย (เทียบโอน)</td><td>3 ปี</td><td>102</td><td>25,000 บาท</td><td><span class="chip">ปวส.</span></td></tr><tr><td><a href="program-detail-iti.html"><strong>ITI</strong></a></td><td>อส.บ. เทคโนโลยีสารสนเทศ (ต่อเนื่อง)</td><td>2 ปี</td><td>78</td><td>19,000 บาท</td><td><span class="chip">ปวส.</span></td></tr></tbody>
+    </table></div>
+    <div class="note-box note-warn">ตัวเลขหน่วยกิตและค่าเทอมอ้างอิงเว็บไซต์ มจพ. (ภาควิชา IT ปรับปรุง 1 พ.ย. 2567) และระเบียบโควตากระจายโอกาส 2569 — <a href="https://www.kmutnb.ac.th/faculty-and-agencies/prachin-campus/faculty-of-Industrial-technology-and-management/%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B8%A7%E0%B8%8A%E0%B8%B2.aspx" target="_blank" rel="noopener" class="ext-link">ดูต้นทาง</a> · โปรดตรวจสอบประกาศรับสมัครประจำปี</div>
+  </div>
+</main>
+
+<!-- =========================
+     FOOTER
+========================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>คณะเทคโนโลยีและการจัดการอุตสาหกรรม (FITM)</h4>
+        <p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี</p>
+        <p>129 หมู่ 21 ตำบลเนินหอม อำเภอเมืองปราจีนบุรี จังหวัดปราจีนบุรี 25230</p>
+      </div>
+      <div class="footer-col">
+        <h4>ติดต่อ</h4>
+        <p>โทรศัพท์ 0-3721-7300 ต่อ 7017, 7032, 7034</p>
+        <p>งานประชาสัมพันธ์ 0-3721-7339</p>
+        <a href="mailto:it@itm.kmutnb.ac.th">it@itm.kmutnb.ac.th (ภาควิชา IT)</a>
+        <p>Facebook: FITM · Line: @fitm</p>
+        <p>เวลาทำการ: วันและเวลาราชการ</p>
+      </div>
+      <div class="footer-col">
+        <h4>เมนูลัด</h4>
+        <a href="apply.html">สมัครเรียน</a>
+        <a href="programs.html">หลักสูตร</a>
+        <a href="admission-rounds.html">รอบรับสมัคร</a>
+        <a href="application-status.html">ตรวจสอบสถานะ</a>
+        <a href="faq.html">คำถามที่พบบ่อย</a>
+      </div>
+      <div class="footer-col">
+        <h4>ข้อมูลเพิ่มเติม</h4>
+        <a href="scholarship.html">ทุนการศึกษา</a>
+        <a href="dormitory.html">หอพัก</a>
+        <a href="openhouse.html">Open House</a>
+        <a href="privacy.html">นโยบายข้อมูลส่วนบุคคล</a>
+        <a href="sitemap.html">แผนผังเว็บไซต์</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2569 คณะเทคโนโลยีและการจัดการอุตสาหกรรม มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</span>
+      <span>ต้นแบบระบบรับสมัคร (Front-end Demo) — การสมัครจริงที่ <a href="https://www.admission.kmutnb.ac.th" target="_blank" rel="noopener">admission.kmutnb.ac.th</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

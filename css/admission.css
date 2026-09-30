@@ -1,0 +1,173 @@
+/* ============================================================
+   ADMISSION.CSS
+   ใช้กับ: admission.html, admission-rounds.html, admission-detail.html,
+           programs.html, undergraduate.html, graduate.html, program-detail.html
+   ============================================================ */
+
+
+/* ============================================================
+   PAGE HERO (แถบหัวข้อสีน้ำเงินด้านบนของทุกหน้าย่อย)
+   แก้ไขได้: สีพื้นหลัง ระยะห่างบน-ล่าง
+   ============================================================ */
+.page-hero {
+  background: var(--primary-color);
+  border-bottom: 4px solid var(--accent-color);
+  color: var(--white);
+  padding: 40px 0 44px;
+}
+.page-hero .eyebrow { color: #E9C79A; }              /* แก้สีคำนำหน้าหัวข้อ (eyebrow) ได้ที่นี่ */
+.page-hero h1 { color: var(--white); margin-bottom: 10px; }
+.page-hero p { color: rgba(255,255,255,0.85); max-width: 640px; }
+.hero-crumbs { font-size: 0.8rem; color: rgba(255,255,255,0.65); margin-bottom: 14px; }
+.hero-crumbs a { color: rgba(255,255,255,0.85); }
+
+
+/* ============================================================
+   BREADCRUMB
+   ============================================================ */
+.breadcrumb { font-size: 0.85rem; color: var(--muted-color); margin-bottom: 18px; }
+.breadcrumb a { color: var(--primary-color); }
+.breadcrumb span { margin: 0 6px; }
+
+
+/* ============================================================
+   TAB-STYLE NAVIGATION (ใช้ <a> ธรรมดา ไม่ใช้ JavaScript Tab)
+   แก้ไขได้: สีเส้นใต้แท็บที่ถูกเลือก (aria-current="page")
+   ============================================================ */
+.tab-nav { display: flex; gap: 6px; border-bottom: 1px solid var(--border-color); margin-bottom: 28px; flex-wrap: wrap; }
+.tab-nav a {
+  padding: 12px 18px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--muted-color);
+  border-bottom: 3px solid transparent;
+}
+.tab-nav a:hover { color: var(--primary-color); }
+.tab-nav a[aria-current="page"] { color: var(--primary-color); border-bottom-color: var(--accent-color); } /* สีแท็บที่ Active */
+
+
+/* ============================================================
+   ADMISSION / ROUND CARD
+   ใช้แสดงข้อมูลหลักสูตรและรอบรับสมัคร — โครงสร้างข้อมูล 1 ชุดต่อ 1 การ์ด
+   แก้ไขเนื้อหาการ์ด (ชื่อ/คุณสมบัติ/กำหนดการ) ได้ที่ตัวแปร DEPARTMENTS
+   และ rounds ในไฟล์ build.py (หรือแก้ตรง HTML ที่ถูก generate ออกมา)
+   ============================================================ */
+.admission-card { background: var(--white); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 22px 24px; box-shadow: var(--shadow-sm); margin-bottom: 18px; }
+.admission-card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 14px; flex-wrap: wrap; }
+.admission-card h3 { margin-bottom: 4px; }
+.admission-card .sub { color: var(--muted-color); font-size: 0.9rem; }
+.admission-card dl { display: grid; grid-template-columns: 150px 1fr; gap: 8px 16px; margin-bottom: 16px; }
+.admission-card dt { color: var(--muted-color); font-size: 0.88rem; }   /* หัวข้อคุณสมบัติ (ซ้าย) */
+.admission-card dd { font-size: 0.92rem; }                              /* ค่าคุณสมบัติ (ขวา) */
+.admission-card-actions { display: flex; gap: 10px; }
+
+
+/* ============================================================
+   TIMELINE (แสดงรอบรับสมัครแบบเส้นเวลา)
+   แก้ไขได้: สีจุด (accent-color) และระยะเส้นด้านซ้าย
+   ============================================================ */
+.timeline { position: relative; padding-left: 28px; }
+.timeline::before { content: ""; position: absolute; left: 8px; top: 6px; bottom: 6px; width: 2px; background: var(--border-color); }
+.timeline-item { position: relative; margin-bottom: 22px; }
+.timeline-item::before { content: ""; position: absolute; left: -28px; top: 4px; width: 14px; height: 14px; border-radius: 50%; background: var(--accent-color); border: 3px solid var(--white); box-shadow: 0 0 0 2px var(--accent-color); }
+.timeline-item h4 { margin-bottom: 4px; }
+
+
+/* ============================================================
+   FILTER CHIPS + SIDEBAR (programs.html)
+   หมายเหตุ: เป็น UI แบบลิงก์ธรรมดา ไม่ Filter แบบ Dynamic จริง (ตามข้อกำหนดห้าม JS)
+   แก้ไขได้: รายการภาควิชา/วุฒิ/รูปแบบ ในฟังก์ชัน programs.html ของ build.py
+   ============================================================ */
+.filter-group { margin-bottom: 10px; }
+.filter-group .filter-label { display: block; font-size: 0.82rem; color: var(--muted-color); margin-bottom: 8px; font-weight: 600; }
+.filter-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.filter-chips a {
+  padding: 7px 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: var(--text-color);
+}
+.filter-chips a:hover, .filter-chips a[aria-current="page"] { background: var(--primary-color); border-color: var(--primary-color); color: var(--white); }
+
+.filter-sidebar { display: grid; grid-template-columns: 220px 1fr; gap: 32px; align-items: start; }
+.filter-panel { background: var(--white); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 20px; }
+
+
+/* ============================================================
+   PROGRAM DETAIL SPEC TABLE (program-detail.html)
+   แก้ไขได้: ความกว้างคอลัมน์หัวข้อ (th) ที่ตัวแปร width ด้านล่าง
+   ============================================================ */
+.spec-table { width: 100%; border-collapse: collapse; margin-bottom: 8px; }
+.spec-table th, .spec-table td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--border-color); font-size: 0.92rem; }
+.spec-table th { width: 200px; color: var(--muted-color); font-weight: 600; }   /* แก้ความกว้างคอลัมน์หัวตารางที่นี่ */
+
+
+/* ============================================================
+   NOTE BOX (กล่องข้อความเตือน เช่น "โปรดตรวจสอบประกาศรับสมัครประจำปี")
+   แก้ไขได้: สีพื้นหลัง/สีตัวอักษร ผ่านตัวแปร status-warning ใน style.css
+   ============================================================ */
+.note-box {
+  background: var(--status-warning-bg);
+  color: var(--status-warning-text);
+  border: 1px solid #F0D8B4;
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  font-size: 0.88rem;
+  margin: 16px 0;
+}
+
+
+/* ============================================================
+   SIDE CARDS (โปรแกรมดีเทล / รายละเอียดโครงการ — คอลัมน์ขวา)
+   ============================================================ */
+.side-card { margin-bottom: 18px; }
+.side-card:last-child { margin-bottom: 0; }
+.side-img { width: 100%; height: auto; border: 1px solid var(--border-color); }
+.dept-code { font-family: var(--font-condensed); font-size: 0.78rem; color: var(--accent-dark); font-weight: 700; letter-spacing: .03em; margin-bottom: 6px; }
+
+/* ============================================================
+   LEVEL NAV (ปุ่มสลับ "ทุกหลักสูตร / ปริญญาตรี / ปริญญาโท / อนุปริญญา")
+   ============================================================ */
+.lvl-nav { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+.lvl-nav a { padding: 8px 16px; border: 1px solid var(--border-color); font-size: 0.86rem; font-weight: 600; color: var(--text-color); }
+.lvl-nav a[aria-current="page"] { background: var(--primary-color); color: var(--white); border-color: var(--primary-color); }
+
+/* ============================================================
+   DATA TABLE (ตารางเปรียบเทียบหลักสูตร)
+   ============================================================ */
+.table-wrap { overflow-x: auto; margin-bottom: 20px; border: 1px solid var(--border-color); }
+.data-table { width: 100%; border-collapse: collapse; min-width: 640px; }
+.data-table th, .data-table td { padding: 11px 14px; border-bottom: 1px solid var(--border-color); font-size: 0.88rem; text-align: left; white-space: nowrap; }
+.data-table thead th { background: var(--light-bg); font-weight: 700; color: var(--dark-color); }
+.data-table tbody tr:hover { background: #FAFAF8; }
+
+/* ============================================================
+   PROGRAMS FILTER — ใช้ CSS ล้วน (radio + :has()) ไม่มี JavaScript
+   โครงสร้าง: <div class="cf"> [input.fr ...] <aside class="filter-panel">labels</aside> <div class="cf-list">cards</div> </div>
+   ============================================================ */
+.cf { display: grid; grid-template-columns: 220px 1fr; gap: 32px; align-items: start; position: relative; }
+.fr { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.chip-l { display: inline-block; padding: 7px 14px; border: 1px solid var(--border-color); border-radius: 999px; font-size: 0.85rem; cursor: pointer; margin: 0 6px 6px 0; }
+.cf-empty { display: none; padding: 30px; text-align: center; color: var(--muted-color); border: 1px dashed var(--border-color); }
+
+/* ไฮไลต์ label ของตัวกรองที่กำลังเลือกอยู่ */
+.cf:has(#fq-all:checked) label[for="fq-all"],
+.cf:has(#fq-m6:checked) label[for="fq-m6"],
+.cf:has(#fq-pvc:checked) label[for="fq-pvc"],
+.cf:has(#fq-pvs:checked) label[for="fq-pvs"],
+.cf:has(#fd-all:checked) label[for="fd-all"],
+.cf:has(#fd-4y:checked) label[for="fd-4y"],
+.cf:has(#fd-3y:checked) label[for="fd-3y"],
+.cf:has(#fd-2y:checked) label[for="fd-2y"] { background: var(--primary-color); color: var(--white); border-color: var(--primary-color); }
+
+/* ซ่อนการ์ดที่ไม่ตรงกับตัวกรองวุฒิ (data-q) */
+.cf:has(#fq-m6:checked) .pcard:not([data-q~="m6"]) { display: none; }
+.cf:has(#fq-pvc:checked) .pcard:not([data-q~="pvc"]) { display: none; }
+.cf:has(#fq-pvs:checked) .pcard:not([data-q~="pvs"]) { display: none; }
+/* ซ่อนการ์ดที่ไม่ตรงกับตัวกรองระยะเวลา (data-d) */
+.cf:has(#fd-4y:checked) .pcard:not([data-d="4y"]) { display: none; }
+.cf:has(#fd-3y:checked) .pcard:not([data-d="3y"]) { display: none; }
+.cf:has(#fd-2y:checked) .pcard:not([data-d="2y"]) { display: none; }
+
+@media (max-width: 900px) { .cf { grid-template-columns: 1fr; } }

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ระบบรับสมัครนักศึกษาใหม่ | FITM</title>
+<meta name="description" content="ระบบรับสมัครนักศึกษาใหม่ คณะเทคโนโลยีและการจัดการอุตสาหกรรม มจพ. ปราจีนบุรี ภาควิชาเทคโนโลยีสารสนเทศ IT ITT INE INET ITI">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/admission.css">
+<link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+
+<!-- =========================
+     UTILITY BAR + HEADER  (แก้เมนู/ข้อมูลติดต่อด่วนที่ layout.py แล้วรัน build.py)
+========================= -->
+<div class="utility-bar">
+  <div class="utility-bar-inner">
+    <div class="utility-links">
+      <a href="https://www.kmutnb.ac.th" target="_blank" rel="noopener">มจพ. กรุงเทพฯ</a>
+      <a href="https://www.admission.kmutnb.ac.th" target="_blank" rel="noopener">ระบบรับสมัครกลาง มจพ.</a>
+      <a href="https://www.fitm.kmutnb.ac.th/" target="_blank" rel="noopener">เว็บไซต์คณะ FITM</a>
+    </div>
+    <div class="utility-links">
+      <span>โทร. 0-3721-7339</span>
+      <span>Line @fitm</span>
+      <a href="mailto:it@itm.kmutnb.ac.th">it@itm.kmutnb.ac.th</a>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-marks"><span class="brand-mark">มจพ.</span><span class="brand-mark brand-mark--accent">FITM</span></span>
+      <span class="brand-text">
+        <span class="brand-faculty">คณะเทคโนโลยีและการจัดการอุตสาหกรรม</span>
+        <span class="brand-system">ระบบรับสมัครนักศึกษาใหม่ · วิทยาเขตปราจีนบุรี</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="เมนูหลัก"><ul><li><a href="index.html" aria-current="page">หน้าหลัก</a></li><li><a href="admission.html">รับสมัคร</a></li><li><a href="programs.html">หลักสูตร</a></li><li><a href="news.html">ข่าวสาร</a></li><li><a href="announcement.html">ประกาศ</a></li><li><a href="scholarship.html">ทุนการศึกษา</a></li><li><a href="openhouse.html">Open House</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">ติดต่อเรา</a></li></ul></nav>
+    <div class="header-actions">
+      <a href="login.html" class="btn btn-secondary btn-sm">เข้าสู่ระบบ</a>
+      <a href="apply.html" class="btn btn-primary btn-sm">สมัครเรียน</a>
+    </div>
+  </div>
+</header>
+
+<!-- =========================
+     MAIN CONTENT
+========================= -->
+<main>
+
+  <!-- =========================
+       NOTICE BAR  (แก้ประกาศด่วนตรงนี้)
+  ========================= -->
+  <div class="notice-bar"><div class="container"><strong>ประกาศด่วน</strong> โควตาเรียนดีและโควตาพื้นที่ ปีการศึกษา 2570 (ปวช.3 / ปวส.2) สมัครออนไลน์ถึง <strong>30 กันยายน 2569</strong> · <a href="admission-detail-good-grade.html">ดูรายละเอียด</a></div></div>
+
+  <!-- =========================
+       PAGE HERO  (แก้ h1 / คำโปรย / ปุ่ม / กล่องขวา — สถานะเปลี่ยน class status-open|warning|closed|pending)
+  ========================= -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-inner">
+        <p class="eyebrow">ปีการศึกษา 2570 · FITM ปราจีนบุรี</p>
+        <h1>ระบบรับสมัครนักศึกษาใหม่</h1>
+        <p class="lead">คณะเทคโนโลยีและการจัดการอุตสาหกรรม มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ — สมัครเรียน ตรวจสอบคุณสมบัติ และติดตามสถานะใบสมัคร ภาควิชาเทคโนโลยีสารสนเทศ 5 สาขา</p>
+        <div class="hero-actions">
+          <a href="apply.html" class="btn btn-primary">สมัครเรียน</a>
+          <a href="programs.html" class="btn btn-outline">ดูหลักสูตร</a>
+          <a href="application-status.html" class="btn btn-outline">ตรวจสอบสถานะ</a>
+        </div>
+      </div>
+      <div class="hero-info-box">
+        <span class="badge status-warning">ใกล้ปิดรับสมัคร</span>
+        <h3>โควตาเรียนดี / โควตาพื้นที่ ปีการศึกษา 2570</h3>
+        <dl>
+          <dt>ปีการศึกษา</dt><dd>2570</dd>
+          <dt>ผู้สมัคร</dt><dd>ปวช.3 / ปวส.2</dd>
+          <dt>สาขา</dt><dd>IT · ITT · INE · INET · ITI</dd>
+          <dt>ปิดรับสมัคร</dt><dd>30 ก.ย. 2569</dd>
+        </dl>
+        <a href="admission-rounds.html" class="btn btn-primary btn-block btn-sm">ดูรอบรับสมัครทั้งหมด</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       QUICK ACCESS  (เพิ่ม/ลบการ์ดโดย copy บล็อก <a class="quick-link">)
+  ========================= -->
+  <section class="section container">
+    <div class="section-head"><p class="eyebrow">เมนูลัด</p><h2>บริการที่ใช้บ่อย</h2></div>
+    <div class="grid grid-4"><a href="apply.html" class="quick-link"><span class="icon">สม</span><span class="link-text"><span class="title">สมัครเรียน</span><span class="desc">เริ่มกรอกใบสมัครออนไลน์</span></span></a><a href="application-status.html" class="quick-link"><span class="icon">สถ</span><span class="link-text"><span class="title">ตรวจสอบสถานะ</span><span class="desc">ติดตามผลใบสมัคร</span></span></a><a href="programs.html" class="quick-link"><span class="icon">หล</span><span class="link-text"><span class="title">หลักสูตร</span><span class="desc">IT · ITT · INE · INET · ITI</span></span></a><a href="admission-rounds.html" class="quick-link"><span class="icon">กก</span><span class="link-text"><span class="title">กำหนดการ</span><span class="desc">รอบรับสมัครทั้งหมด</span></span></a><a href="announcement.html" class="quick-link"><span class="icon">ปก</span><span class="link-text"><span class="title">ประกาศ</span><span class="desc">ข่าวสารและระเบียบ</span></span></a><a href="assets/documents/checklist-documents.pdf" class="quick-link"><span class="icon">ดล</span><span class="link-text"><span class="title">ดาวน์โหลดเอกสาร</span><span class="desc">รายการเอกสารที่ต้องใช้ (PDF)</span></span></a><a href="scholarship.html" class="quick-link"><span class="icon">ทน</span><span class="link-text"><span class="title">ทุนการศึกษา</span><span class="desc">ทุนและ กยศ.</span></span></a><a href="dormitory.html" class="quick-link"><span class="icon">พก</span><span class="link-text"><span class="title">หอพัก</span><span class="desc">หอพักในวิทยาเขต</span></span></a></div>
+  </section>
+
+  <!-- =========================
+       PROGRAM HIGHLIGHT  (ข้อมูลจาก data.py -> PROGRAMS)
+  ========================= -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head"><p class="eyebrow">ภาควิชาเทคโนโลยีสารสนเทศ</p><h2>5 สาขาที่เปิดรับ</h2>
+        <p class="text-muted">ภาควิชา IT เปิดสอน 3 ปริญญา แบ่งเป็น 5 รหัสสาขาตามวุฒิที่รับ</p></div>
+      <div class="grid grid-3 grid-5">
+        <a href="program-detail.html" class="program-card">
+          <div class="thumb"><img src="assets/images/prog-it.svg" alt="ภาพประกอบหลักสูตร IT เทคโนโลยีสารสนเทศ" width="800" height="500" loading="lazy"></div>
+          <div class="body">
+            <p class="dept">IT · วท.บ.</p>
+            <h3>เทคโนโลยีสารสนเทศ</h3>
+            <div class="meta"><span>4 ปี</span><span>120 หน่วยกิต</span><span><span class="chip">ม.6</span> <span class="chip">ปวช.</span></span></div>
+          </div>
+        </a>
+        <a href="program-detail-itt.html" class="program-card">
+          <div class="thumb"><img src="assets/images/prog-itt.svg" alt="ภาพประกอบหลักสูตร ITT เทคโนโลยีสารสนเทศ (เทียบโอน)" width="800" height="500" loading="lazy"></div>
+          <div class="body">
+            <p class="dept">ITT · วท.บ.</p>
+            <h3>เทคโนโลยีสารสนเทศ (เทียบโอน)</h3>
+            <div class="meta"><span>2 ปี</span><span>84 หน่วยกิต</span><span><span class="chip">ปวส.</span></span></div>
+          </div>
+        </a>
+        <a href="program-detail-ine.html" class="program-card">
+          <div class="thumb"><img src="assets/images/prog-ine.svg" alt="ภาพประกอบหลักสูตร INE วิศวกรรมสารสนเทศและเครือข่าย" width="800" height="500" loading="lazy"></div>
+          <div class="body">
+            <p class="dept">INE · วศ.บ.</p>
+            <h3>วิศวกรรมสารสนเทศและเครือข่าย</h3>
+            <div class="meta"><span>4 ปี</span><span>125 หน่วยกิต</span><span><span class="chip">ม.6</span> <span class="chip">ปวช.</span></span></div>
+          </div>
+        </a>
+        <a href="program-detail-inet.html" class="program-card">
+          <div class="thumb"><img src="assets/images/prog-inet.svg" alt="ภาพประกอบหลักสูตร INET วิศวกรรมสารสนเทศและเครือข่าย (เทียบโอน)" width="800" height="500" loading="lazy"></div>
+          <div class="body">
+            <p class="dept">INET · วศ.บ.</p>
+            <h3>วิศวกรรมสารสนเทศและเครือข่าย (เทียบโอน)</h3>
+            <div class="meta"><span>3 ปี</span><span>102 หน่วยกิต</span><span><span class="chip">ปวส.</span></span></div>
+          </div>
+        </a>
+        <a href="program-detail-iti.html" class="program-card">
+          <div class="thumb"><img src="assets/images/prog-iti.svg" alt="ภาพประกอบหลักสูตร ITI เทคโนโลยีสารสนเทศ (ต่อเนื่อง)" width="800" height="500" loading="lazy"></div>
+          <div class="body">
+            <p class="dept">ITI · อส.บ.</p>
+            <h3>เทคโนโลยีสารสนเทศ (ต่อเนื่อง)</h3>
+            <div class="meta"><span>2 ปี</span><span>78 หน่วยกิต</span><span><span class="chip">ปวส.</span></span></div>
+          </div>
+        </a></div>
+      <p style="margin-top:18px;"><a href="programs.html" class="btn btn-secondary btn-sm">เปรียบเทียบทุกหลักสูตร</a></p>
+    </div>
+  </section>
+
+  <!-- =========================
+       NEWS + ANNOUNCEMENT  (data.py -> NEWS / ANNOUNCEMENTS)
+  ========================= -->
+  <section class="section container">
+    <div class="two-col">
+      <div>
+        <div class="section-head"><p class="eyebrow">ข่าวสาร</p><h2>ข่าวล่าสุด</h2></div>
+        <div class="card">
+      <div class="list-row">
+        <span class="date">25 ส.ค. 2569</span>
+        <div><p class="row-cat">ข่าวรับสมัคร</p><h4><a href="news-detail.html">FITM เปิดรับสมัครโควตาเรียนดีและโควตาพื้นที่ ปีการศึกษา 2570</a></h4></div>
+      </div>
+      <div class="list-row">
+        <span class="date">29 เม.ย. 2569</span>
+        <div><p class="row-cat">ข่าวรับสมัคร</p><h4><a href="news-detail-2.html">FITM รับสมัครรอบ Admission ระบบ TCAS69 (เลือกอันดับ 6–12 พฤษภาคม 2569)</a></h4></div>
+      </div>
+      <div class="list-row">
+        <span class="date">พ.ค. 2569</span>
+        <div><p class="row-cat">ข่าวรับสมัคร</p><h4><a href="news-detail-3.html">FITM รับตรง TCAS4 รอบสุดท้ายก่อนเปิดเทอม สมัครถึง 31 พฤษภาคม 2569</a></h4></div>
+      </div>
+      <div class="list-row">
+        <span class="date">ปีการศึกษา 2569</span>
+        <div><p class="row-cat">ข่าวประชาสัมพันธ์</p><h4><a href="news-detail-4.html">ขอต้อนรับนักศึกษาใหม่ ปีการศึกษา 2569 เข้าสู่ครอบครัว FITM</a></h4></div>
+      </div></div>
+        <p style="margin-top:14px;"><a href="news.html" class="btn btn-secondary btn-sm">ข่าวทั้งหมด</a></p>
+      </div>
+      <div>
+        <div class="section-head"><p class="eyebrow">ประกาศ</p><h2>ประกาศสำคัญ</h2></div>
+        <div class="card">
+      <div class="list-row">
+        <span class="date">25 ส.ค. 2569</span>
+        <div><p class="row-cat">ANN-2570-001 · รับสมัคร</p><h4><a href="announcement-detail.html">ประกาศรับสมัครโควตาเรียนดีและโควตาพื้นที่ ระดับปริญญาตรี ปีการศึกษา 2570</a></h4></div>
+      </div>
+      <div class="list-row">
+        <span class="date">ปีการศึกษา 2569</span>
+        <div><p class="row-cat">ANN-2570-002 · รับสมัคร</p><h4><a href="announcement-detail-2.html">ระเบียบการรับสมัครนักศึกษาโควตากระจายโอกาส ปีการศึกษา 2569 (รอบ 2) — ฉบับอ้างอิง</a></h4></div>
+      </div>
+      <div class="list-row">
+        <span class="date">ปีการศึกษา 2570</span>
+        <div><p class="row-cat">ANN-2570-003 · รับสมัคร</p><h4><a href="announcement-detail-3.html">กำหนดการรับนักศึกษาใหม่ ปีการศึกษา 2570 (ระบบรับสมัครกลาง มจพ.)</a></h4></div>
+      </div>
+      <div class="list-row">
+        <span class="date">ตลอดปี</span>
+        <div><p class="row-cat">ANN-2570-004 · เอกสาร</p><h4><a href="announcement-detail-4.html">ตรวจสอบคุณวุฒิ ปวช./ปวส. ก่อนสมัคร ว่าสาขาใดเข้าศึกษาต่อได้</a></h4></div>
+      </div></div>
+        <p style="margin-top:14px;"><a href="announcement.html" class="btn btn-secondary btn-sm">ประกาศทั้งหมด</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       HOW TO APPLY
+  ========================= -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head"><p class="eyebrow">ขั้นตอน</p><h2>วิธีสมัครเรียน</h2></div>
+      <div class="steps-row"><div class="step-item"><span class="step-num">01</span><h4>เลือกโครงการ</h4></div><div class="step-item"><span class="step-num">02</span><h4>ตรวจสอบคุณสมบัติ</h4></div><div class="step-item"><span class="step-num">03</span><h4>เลือกหลักสูตร</h4></div><div class="step-item"><span class="step-num">04</span><h4>กรอกข้อมูล</h4></div><div class="step-item"><span class="step-num">05</span><h4>แนบเอกสาร</h4></div><div class="step-item"><span class="step-num">06</span><h4>ตรวจสอบ</h4></div><div class="step-item"><span class="step-num">07</span><h4>ยืนยัน</h4></div><div class="step-item"><span class="step-num">08</span><h4>พิมพ์ใบสมัคร</h4></div></div>
+    </div>
+  </section>
+
+  <!-- =========================
+       FAQ
+  ========================= -->
+  <section class="section container" style="max-width:820px;">
+    <div class="section-head"><p class="eyebrow">คำถามที่พบบ่อย</p><h2>FAQ</h2></div>
+    <details class="faq-item"><summary>สมัครได้กี่หลักสูตร / กี่อันดับ</summary><div>ขึ้นอยู่กับโครงการ ตัวอย่างระเบียบโควตากระจายโอกาสปี 2569 ให้เลือกได้ 4 อันดับที่ตรงกับคุณวุฒิ ปี 2570 โปรดตรวจสอบประกาศของแต่ละโครงการ ระบบตัวอย่างนี้มีช่องเลือกอันดับ 1–2</div></details><details class="faq-item"><summary>ต้องใช้เอกสารอะไรบ้าง</summary><div>โดยทั่วไปคือ บัตรประชาชน สำเนาทะเบียนบ้าน ใบแสดงผลการเรียน รูปถ่าย และ Portfolio (ถ้าโครงการกำหนด) ไฟล์เอกสารสัมภาษณ์มักเป็น PDF ดูรายการที่หน้าอัปโหลดเอกสาร</div></details><details class="faq-item"><summary>กรอกข้อมูลผิดทำอย่างไร</summary><div>ก่อนกดยืนยันสามารถกดปุ่ม “แก้ไข” ในหน้าตรวจสอบข้อมูลเพื่อย้อนกลับไปแก้แต่ละส่วนได้ หลังยืนยันแล้วให้ติดต่องานวิชาการ/ประชาสัมพันธ์ของคณะ</div></details><details class="faq-item"><summary>พิมพ์ใบสมัครอย่างไร</summary><div>เปิดหน้าใบสมัครสำหรับพิมพ์ แล้วกด Ctrl+P (Windows) หรือ Command+P (Mac) เลือกปลายทางเป็น Save as PDF ขนาดกระดาษ A4</div></details><details class="faq-item"><summary>ตรวจสอบสถานะอย่างไร</summary><div>ใช้หน้าตรวจสอบสถานะโดยกรอกเลขที่สมัครและเลขบัตรประชาชน (ระบบตัวอย่างนี้เป็นการจำลอง) ระบบจริงตรวจสอบที่ admission.kmutnb.ac.th</div></details>
+    <p style="margin-top:16px;"><a href="faq.html" class="btn btn-secondary btn-sm">ดูคำถามทั้งหมด</a></p>
+  </section>
+
+</main>
+
+<!-- =========================
+     FOOTER
+========================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>คณะเทคโนโลยีและการจัดการอุตสาหกรรม (FITM)</h4>
+        <p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี</p>
+        <p>129 หมู่ 21 ตำบลเนินหอม อำเภอเมืองปราจีนบุรี จังหวัดปราจีนบุรี 25230</p>
+      </div>
+      <div class="footer-col">
+        <h4>ติดต่อ</h4>
+        <p>โทรศัพท์ 0-3721-7300 ต่อ 7017, 7032, 7034</p>
+        <p>งานประชาสัมพันธ์ 0-3721-7339</p>
+        <a href="mailto:it@itm.kmutnb.ac.th">it@itm.kmutnb.ac.th (ภาควิชา IT)</a>
+        <p>Facebook: FITM · Line: @fitm</p>
+        <p>เวลาทำการ: วันและเวลาราชการ</p>
+      </div>
+      <div class="footer-col">
+        <h4>เมนูลัด</h4>
+        <a href="apply.html">สมัครเรียน</a>
+        <a href="programs.html">หลักสูตร</a>
+        <a href="admission-rounds.html">รอบรับสมัคร</a>
+        <a href="application-status.html">ตรวจสอบสถานะ</a>
+        <a href="faq.html">คำถามที่พบบ่อย</a>
+      </div>
+      <div class="footer-col">
+        <h4>ข้อมูลเพิ่มเติม</h4>
+        <a href="scholarship.html">ทุนการศึกษา</a>
+        <a href="dormitory.html">หอพัก</a>
+        <a href="openhouse.html">Open House</a>
+        <a href="privacy.html">นโยบายข้อมูลส่วนบุคคล</a>
+        <a href="sitemap.html">แผนผังเว็บไซต์</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2569 คณะเทคโนโลยีและการจัดการอุตสาหกรรม มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</span>
+      <span>ต้นแบบระบบรับสมัคร (Front-end Demo) — การสมัครจริงที่ <a href="https://www.admission.kmutnb.ac.th" target="_blank" rel="noopener">admission.kmutnb.ac.th</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

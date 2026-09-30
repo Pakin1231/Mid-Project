@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ที่อยู่ | FITM</title>
+<meta name="description" content="ที่อยู่ — ระบบรับสมัครนักศึกษาใหม่ คณะเทคโนโลยีและการจัดการอุตสาหกรรม วิทยาเขตปราจีนบุรี">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/form.css">
+<link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+
+<!-- =========================
+     UTILITY BAR + HEADER  (แก้เมนู/ข้อมูลติดต่อด่วนที่ layout.py แล้วรัน build.py)
+========================= -->
+<div class="utility-bar">
+  <div class="utility-bar-inner">
+    <div class="utility-links">
+      <a href="https://www.kmutnb.ac.th" target="_blank" rel="noopener">มจพ. กรุงเทพฯ</a>
+      <a href="https://www.admission.kmutnb.ac.th" target="_blank" rel="noopener">ระบบรับสมัครกลาง มจพ.</a>
+      <a href="https://www.fitm.kmutnb.ac.th/" target="_blank" rel="noopener">เว็บไซต์คณะ FITM</a>
+    </div>
+    <div class="utility-links">
+      <span>โทร. 0-3721-7339</span>
+      <span>Line @fitm</span>
+      <a href="mailto:it@itm.kmutnb.ac.th">it@itm.kmutnb.ac.th</a>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-marks"><span class="brand-mark">มจพ.</span><span class="brand-mark brand-mark--accent">FITM</span></span>
+      <span class="brand-text">
+        <span class="brand-faculty">คณะเทคโนโลยีและการจัดการอุตสาหกรรม</span>
+        <span class="brand-system">ระบบรับสมัครนักศึกษาใหม่ · วิทยาเขตปราจีนบุรี</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="เมนูหลัก"><ul><li><a href="index.html">หน้าหลัก</a></li><li><a href="admission.html">รับสมัคร</a></li><li><a href="programs.html">หลักสูตร</a></li><li><a href="news.html">ข่าวสาร</a></li><li><a href="announcement.html">ประกาศ</a></li><li><a href="scholarship.html">ทุนการศึกษา</a></li><li><a href="openhouse.html">Open House</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">ติดต่อเรา</a></li></ul></nav>
+    <div class="header-actions">
+      <a href="login.html" class="btn btn-secondary btn-sm">เข้าสู่ระบบ</a>
+      <a href="apply.html" class="btn btn-primary btn-sm">สมัครเรียน</a>
+    </div>
+  </div>
+</header>
+
+<!-- =========================
+     MAIN CONTENT
+========================= -->
+<main>
+
+  <div class="container section">
+    <div class="apply-layout">
+      <aside class="step-sidebar screen-only"><p class="step-sidebar-label">ขั้นตอนสมัคร</p><ol><li class="step-completed"><span class="num">✓</span><span>ประเภทผู้สมัคร</span></li><li class="step-completed"><span class="num">✓</span><span>โครงการ</span></li><li class="step-completed"><span class="num">✓</span><span>หลักสูตร</span></li><li class="step-completed"><span class="num">✓</span><span>ข้อมูลส่วนตัว</span></li><li class="step-completed"><span class="num">✓</span><span>การศึกษา</span></li><li class="step-completed"><span class="num">✓</span><span>ผู้ปกครอง</span></li><li class="step-current"><span class="num">07</span><span>ที่อยู่</span></li><li class="step-pending"><span class="num">08</span><span>เอกสาร</span></li><li class="step-pending"><span class="num">09</span><span>ตรวจสอบ</span></li><li class="step-pending"><span class="num">10</span><span>เสร็จสิ้น</span></li></ol></aside>
+      <div class="form-card">
+        <div class="stepper-top screen-only"><span>ขั้นตอนที่ 7/10 · ที่อยู่</span><div class="dots"><span class="dot done"></span><span class="dot done"></span><span class="dot done"></span><span class="dot done"></span><span class="dot done"></span><span class="dot done"></span><span class="dot cur"></span><span class="dot "></span><span class="dot "></span><span class="dot "></span></div></div>
+        <h2>ที่อยู่</h2><div class="form-section"><h3>ที่อยู่ตามทะเบียนบ้าน</h3>
+      <div class="form-row cols-3">
+        <div class="form-group"><label class="form-label">บ้านเลขที่<span class="form-required">*</span></label><input class="form-control" type="text" required></div>
+        <div class="form-group"><label class="form-label">หมู่</label><input class="form-control" type="text"></div>
+        <div class="form-group"><label class="form-label">ซอย</label><input class="form-control" type="text"></div>
+      </div>
+      <div class="form-row cols-3">
+        <div class="form-group"><label class="form-label">ถนน</label><input class="form-control" type="text"></div>
+        <div class="form-group"><label class="form-label">ตำบล/แขวง<span class="form-required">*</span></label><input class="form-control" type="text" required></div>
+        <div class="form-group"><label class="form-label">อำเภอ/เขต<span class="form-required">*</span></label><input class="form-control" type="text" required></div>
+      </div>
+      <div class="form-row cols-3">
+        <div class="form-group"><label class="form-label">จังหวัด<span class="form-required">*</span></label>
+          <select class="form-control" required><option value="">— เลือกจังหวัด —</option><option>กรุงเทพมหานคร</option><option>กระบี่</option><option>กาญจนบุรี</option><option>กาฬสินธุ์</option><option>กำแพงเพชร</option><option>ขอนแก่น</option><option>จันทบุรี</option><option>ฉะเชิงเทรา</option><option>ชลบุรี</option><option>ชัยนาท</option><option>ชัยภูมิ</option><option>ชุมพร</option><option>เชียงราย</option><option>เชียงใหม่</option><option>ตรัง</option><option>ตราด</option><option>ตาก</option><option>นครนายก</option><option>นครปฐม</option><option>นครพนม</option><option>นครราชสีมา</option><option>นครศรีธรรมราช</option><option>นครสวรรค์</option><option>นนทบุรี</option><option>นราธิวาส</option><option>น่าน</option><option>บึงกาฬ</option><option>บุรีรัมย์</option><option>ปทุมธานี</option><option>ประจวบคีรีขันธ์</option><option selected>ปราจีนบุรี</option><option>ปัตตานี</option><option>พระนครศรีอยุธยา</option><option>พังงา</option><option>พัทลุง</option><option>พิจิตร</option><option>พิษณุโลก</option><option>เพชรบุรี</option><option>เพชรบูรณ์</option><option>แพร่</option><option>พะเยา</option><option>ภูเก็ต</option><option>มหาสารคาม</option><option>มุกดาหาร</option><option>แม่ฮ่องสอน</option><option>ยโสธร</option><option>ยะลา</option><option>ร้อยเอ็ด</option><option>ระนอง</option><option>ระยอง</option><option>ราชบุรี</option><option>ลพบุรี</option><option>ลำปาง</option><option>ลำพูน</option><option>เลย</option><option>ศรีสะเกษ</option><option>สกลนคร</option><option>สงขลา</option><option>สตูล</option><option>สมุทรปราการ</option><option>สมุทรสงคราม</option><option>สมุทรสาคร</option><option>สระแก้ว</option><option>สระบุรี</option><option>สิงห์บุรี</option><option>สุโขทัย</option><option>สุพรรณบุรี</option><option>สุราษฎร์ธานี</option><option>สุรินทร์</option><option>หนองคาย</option><option>หนองบัวลำภู</option><option>อ่างทอง</option><option>อำนาจเจริญ</option><option>อุดรธานี</option><option>อุตรดิตถ์</option><option>อุทัยธานี</option><option>อุบลราชธานี</option></select></div>
+        <div class="form-group"><label class="form-label">รหัสไปรษณีย์<span class="form-required">*</span></label><input class="form-control" type="text" pattern="[0-9]{5}" required></div>
+      </div></div><div class="form-section"><h3>ที่อยู่ปัจจุบัน (ถ้าต่างจากทะเบียนบ้าน)</h3>
+      <div class="form-row cols-3">
+        <div class="form-group"><label class="form-label">บ้านเลขที่<span class="form-required">*</span></label><input class="form-control" type="text" required></div>
+        <div class="form-group"><label class="form-label">หมู่</label><input class="form-control" type="text"></div>
+        <div class="form-group"><label class="form-label">ซอย</label><input class="form-control" type="text"></div>
+      </div>
+      <div class="form-row cols-3">
+        <div class="form-group"><label class="form-label">ถนน</label><input class="form-control" type="text"></div>
+        <div class="form-group"><label class="form-label">ตำบล/แขวง<span class="form-required">*</span></label><input class="form-control" type="text" required></div>
+        <div class="form-group"><label class="form-label">อำเภอ/เขต<span class="form-required">*</span></label><input class="form-control" type="text" required></div>
+      </div>
+      <div class="form-row cols-3">
+        <div class="form-group"><label class="form-label">จังหวัด<span class="form-required">*</span></label>
+          <select class="form-control" required><option value="">— เลือกจังหวัด —</option><option>กรุงเทพมหานคร</option><option>กระบี่</option><option>กาญจนบุรี</option><option>กาฬสินธุ์</option><option>กำแพงเพชร</option><option>ขอนแก่น</option><option>จันทบุรี</option><option>ฉะเชิงเทรา</option><option>ชลบุรี</option><option>ชัยนาท</option><option>ชัยภูมิ</option><option>ชุมพร</option><option>เชียงราย</option><option>เชียงใหม่</option><option>ตรัง</option><option>ตราด</option><option>ตาก</option><option>นครนายก</option><option>นครปฐม</option><option>นครพนม</option><option>นครราชสีมา</option><option>นครศรีธรรมราช</option><option>นครสวรรค์</option><option>นนทบุรี</option><option>นราธิวาส</option><option>น่าน</option><option>บึงกาฬ</option><option>บุรีรัมย์</option><option>ปทุมธานี</option><option>ประจวบคีรีขันธ์</option><option selected>ปราจีนบุรี</option><option>ปัตตานี</option><option>พระนครศรีอยุธยา</option><option>พังงา</option><option>พัทลุง</option><option>พิจิตร</option><option>พิษณุโลก</option><option>เพชรบุรี</option><option>เพชรบูรณ์</option><option>แพร่</option><option>พะเยา</option><option>ภูเก็ต</option><option>มหาสารคาม</option><option>มุกดาหาร</option><option>แม่ฮ่องสอน</option><option>ยโสธร</option><option>ยะลา</option><option>ร้อยเอ็ด</option><option>ระนอง</option><option>ระยอง</option><option>ราชบุรี</option><option>ลพบุรี</option><option>ลำปาง</option><option>ลำพูน</option><option>เลย</option><option>ศรีสะเกษ</option><option>สกลนคร</option><option>สงขลา</option><option>สตูล</option><option>สมุทรปราการ</option><option>สมุทรสงคราม</option><option>สมุทรสาคร</option><option>สระแก้ว</option><option>สระบุรี</option><option>สิงห์บุรี</option><option>สุโขทัย</option><option>สุพรรณบุรี</option><option>สุราษฎร์ธานี</option><option>สุรินทร์</option><option>หนองคาย</option><option>หนองบัวลำภู</option><option>อ่างทอง</option><option>อำนาจเจริญ</option><option>อุดรธานี</option><option>อุตรดิตถ์</option><option>อุทัยธานี</option><option>อุบลราชธานี</option></select></div>
+        <div class="form-group"><label class="form-label">รหัสไปรษณีย์<span class="form-required">*</span></label><input class="form-control" type="text" pattern="[0-9]{5}" required></div>
+      </div></div>
+        <div class="form-actions">
+          <a href="apply-parent.html" class="btn btn-secondary">ย้อนกลับ</a>
+          <a href="apply-document.html" class="btn btn-primary">ถัดไป</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- =========================
+     FOOTER
+========================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>คณะเทคโนโลยีและการจัดการอุตสาหกรรม (FITM)</h4>
+        <p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี</p>
+        <p>129 หมู่ 21 ตำบลเนินหอม อำเภอเมืองปราจีนบุรี จังหวัดปราจีนบุรี 25230</p>
+      </div>
+      <div class="footer-col">
+        <h4>ติดต่อ</h4>
+        <p>โทรศัพท์ 0-3721-7300 ต่อ 7017, 7032, 7034</p>
+        <p>งานประชาสัมพันธ์ 0-3721-7339</p>
+        <a href="mailto:it@itm.kmutnb.ac.th">it@itm.kmutnb.ac.th (ภาควิชา IT)</a>
+        <p>Facebook: FITM · Line: @fitm</p>
+        <p>เวลาทำการ: วันและเวลาราชการ</p>
+      </div>
+      <div class="footer-col">
+        <h4>เมนูลัด</h4>
+        <a href="apply.html">สมัครเรียน</a>
+        <a href="programs.html">หลักสูตร</a>
+        <a href="admission-rounds.html">รอบรับสมัคร</a>
+        <a href="application-status.html">ตรวจสอบสถานะ</a>
+        <a href="faq.html">คำถามที่พบบ่อย</a>
+      </div>
+      <div class="footer-col">
+        <h4>ข้อมูลเพิ่มเติม</h4>
+        <a href="scholarship.html">ทุนการศึกษา</a>
+        <a href="dormitory.html">หอพัก</a>
+        <a href="openhouse.html">Open House</a>
+        <a href="privacy.html">นโยบายข้อมูลส่วนบุคคล</a>
+        <a href="sitemap.html">แผนผังเว็บไซต์</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2569 คณะเทคโนโลยีและการจัดการอุตสาหกรรม มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</span>
+      <span>ต้นแบบระบบรับสมัคร (Front-end Demo) — การสมัครจริงที่ <a href="https://www.admission.kmutnb.ac.th" target="_blank" rel="noopener">admission.kmutnb.ac.th</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
