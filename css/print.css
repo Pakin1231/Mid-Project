@@ -31,8 +31,9 @@
 }
 
 .doc-header { display: flex; align-items: center; gap: 16px; border-bottom: 2px solid #111; padding-bottom: 12px; margin-bottom: 14px; }
-.doc-header .doc-logos { display: flex; gap: 10px; }
+.doc-header .doc-logos { display: flex; gap: 10px; align-items: center; }
 .doc-header .doc-logo { width: 46px; height: 46px; border-radius: 50%; border: 1px solid #111; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; }
+.doc-header .doc-logo-img { width: 46px; height: 46px; object-fit: contain; }
 .doc-header .doc-titles { flex: 1; text-align: center; }
 .doc-header .doc-titles .univ { font-weight: 700; font-size: 15px; }
 .doc-header .doc-titles .faculty { font-size: 12px; }
